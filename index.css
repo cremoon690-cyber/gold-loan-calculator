@@ -6079,10 +6079,23 @@ button.accordion-trigger {
     height: 40px;
 }
 
+}
 
+.header-container.is-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transform: translateY(-100%);
+    transition: transform 0.25s ease-in-out;
+    background: #fff;
+}
 
+.header-container.is-fixed.show-header {
+    transform: translateY(0);
+}
 
-
-
-
+.marquee {
+    margin-top: -20px;
 }
