@@ -5900,6 +5900,7 @@ button.accordion-trigger {
         scrollbar-width: none;
         -ms-overflow-style: none;
     }
+    
 
     .why-choose-section .why-grid::-webkit-scrollbar {
         display: none;
