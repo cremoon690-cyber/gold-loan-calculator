@@ -1077,33 +1077,9 @@ document.addEventListener('DOMContentLoaded', function () {
   renderActiveTabResult();
 })();
 
-// sticky header
 
 
 
-
-
-
-
-document.addEventListener("DOMContentLoaded", function () {
-
-    const header = document.querySelector(".header-container");
-
-    if (!header) return;
-
-    const headerTop = header.getBoundingClientRect().top + window.scrollY;
-
-    window.addEventListener("scroll", function () {
-
-        if (window.scrollY >= headerTop) {
-            header.classList.add("is-fixed");
-        } else {
-            header.classList.remove("is-fixed");
-        }
-
-    });
-
-});
 //   map location
 
 
