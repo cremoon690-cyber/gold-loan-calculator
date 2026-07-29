@@ -1087,7 +1087,7 @@ Sticky tab
 
 .faq-section {
     width: 100%;
-  
+    
     background-color: #F5F6F8;
 }
 
@@ -3040,7 +3040,7 @@ DISABLE DIM EFFECT ON MOBILE
 
 .testimonials-section {
     width: 100%;
-    padding: 20px 60px 20px!important;
+    /* padding: 20px 60px 20px!important; */
 }
 
 .heading-left h2{
@@ -5972,7 +5972,7 @@ button.accordion-trigger {
     }
 .faq-section {
     width: 100%;
-    /* padding: 64px 150px 1px !important; */
+    padding: 64px 150px 1px !important;
     background-color: #F5F6F8;
 }
     .hero-slider,
