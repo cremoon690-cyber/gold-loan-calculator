@@ -1723,3 +1723,36 @@ if (document.readyState === 'loading') {
 } else {
   initInsightsSlider();
 }
+
+
+
+
+// sticky header finally
+
+(function () {
+    const header = document.querySelector('.header-container.is-fixed');
+    const targetSection = document.querySelector('#scrollstrip'); // apna real id daalein
+
+    if (!header || !targetSection) {
+        console.error('Header ya target section nahi mila. Selector check karein.');
+        return;
+    }
+
+    const observer = new IntersectionObserver(
+        function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.boundingClientRect.top < 0) {
+                    header.classList.add('show-header');
+                } else {
+                    header.classList.remove('show-header');
+                }
+            });
+        },
+        {
+            threshold: 0,
+            rootMargin: '0px'
+        }
+    );
+
+    observer.observe(targetSection);
+})();
