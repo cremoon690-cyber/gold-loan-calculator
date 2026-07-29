@@ -1730,7 +1730,7 @@ if (document.readyState === 'loading') {
 
 (function () {
     const header = document.querySelector('.header-container.is-fixed');
-    const targetSection = document.querySelector('#scrollstrip');  // apna real id daalein
+    const targetSection = document.querySelector('#scrollstrip'); 
 
     if (!header || !targetSection) {
         console.error('Header ya target section nahi mila. Selector check karein.');
