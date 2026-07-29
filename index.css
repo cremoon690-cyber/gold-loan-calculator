@@ -5972,7 +5972,7 @@ button.accordion-trigger {
     }
 .faq-section {
     width: 100%;
-    padding: 64px 150px 1px !important;
+    /* padding: 64px 150px 1px !important; */
     background-color: #F5F6F8;
 }
     .hero-slider,
