@@ -1641,7 +1641,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function initInsightsSlider() {
   var track = document.getElementById('insightsGrid'); // <div class="insights-grid" id="insightsGrid">
   if (!track) {
-    console.warn('[insights-slider] #insightsGrid nahi mila - id="insightsGrid" .insights-grid div par add karein.');
+    
     return;
   }
 
@@ -1733,7 +1733,7 @@ if (document.readyState === 'loading') {
     const targetSection = document.querySelector('#scrollstrip'); 
 
     if (!header || !targetSection) {
-        console.error('Header ya target section nahi mila. Selector check karein.');
+       
         return;
     }
 
