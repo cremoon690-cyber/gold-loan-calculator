@@ -329,7 +329,7 @@ CHECKBOX
 
 .checkbox-group input{
 
-    margin-top:4px;
+    /* margin-top:4px; */
 
 }
 
@@ -677,7 +677,7 @@ TABLET
 
     .checkbox-group input{
 
-    margin-top:2px;
+    margin-top:2px !important;
 
 }
 
