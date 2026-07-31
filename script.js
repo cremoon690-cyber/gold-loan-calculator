@@ -14,6 +14,7 @@ const swiper = new Swiper(".heroSwiper", {
 
         disableOnInteraction: false,
 
+        
     },
 
     pagination: {
