@@ -1,0 +1,2129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Aditya Birla Gold Loan</title>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+
+
+</head>
+
+<body>
+
+  <header class="custom-header">
+    <img src="img/header.png" alt="Header" class="header-image">
+  </header>
+
+  <section class="hero-section">
+
+    <div class="hero-container">
+
+      <!-- ===========================
+            LEFT BANNER
+        ============================ -->
+
+      <div class="hero-slider">
+
+        <div class="swiper heroSwiper">
+
+          <div class="swiper-wrapper">
+
+          
+
+             <div class="swiper-slide">
+              <img src="img/first banner (1).jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="img/first banner (3).jpg" alt="">
+            </div>
+
+             <div class="swiper-slide">
+              <img src="img/first banner (4).jpg" alt="">
+            </div>
+
+            
+
+          </div>
+
+          <div class="swiper-pagination"></div>
+
+        </div>
+
+      </div>
+
+      <!-- ===========================
+            RIGHT FORM
+        ============================ -->
+
+      <div class="hero-form">
+
+        <div class="form-card">
+
+          <h2>Apply For Gold Loan</h2>
+
+          <form id="leadForm">
+
+            <!-- Full Name -->
+
+            <div class="form-group">
+
+              <label>Full Name</label>
+
+             <input
+  type="text"
+  id="fullname"
+  placeholder="As per Aadhaar Card"
+  required
+  oninput="this.value=this.value.replace(/[^a-zA-Z ]/g,'')">
+
+            </div>
+
+
+            <!-- Mobile Number -->
+
+            <div class="form-group">
+
+              <label>Mobile Number</label>
+
+              <div class="mobile-wrapper">
+
+               <input
+  type="tel"
+  id="mobileNumber"
+  maxlength="10"
+  placeholder="Enter Mobile Number"
+  required
+  oninput="this.value=this.value.replace(/[^0-9]/g,'')">
+
+                <button type="button" class="otp-btn" id="generateOTP">
+
+                  Generate OTP
+
+                </button>
+
+              </div>
+
+            </div>
+
+
+            <!-- Pincode -->
+
+            <div class="form-group">
+
+              <label>PIN Code</label>
+
+              <input type="text" maxlength="6" placeholder="Enter PIN Code" required>
+
+            </div>
+
+
+            <!-- Checkbox -->
+
+            <div class="checkbox-group">
+
+              <input type="checkbox" id="terms" required>
+
+              <label for="terms">
+
+                I agree to the
+                <a href="#">Terms & Conditions</a>
+
+              </label>
+
+            </div>
+
+
+            <!-- Submit -->
+
+            <button type="submit" class="submit-btn">
+
+              APPLY NOW
+
+            </button>
+
+
+            <p class="secure-text">
+
+              🔒 End-to-End Encrypted Secure Form
+
+            </p>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ===========================
+OTP POPUP
+=========================== -->
+
+  <div class="otp-modal" id="otpModal">
+
+    <div class="otp-box">
+
+      <button class="close-modal" id="closeModal">
+
+        &times;
+
+      </button>
+
+      <h3>
+
+        Verify Mobile Number
+
+      </h3>
+
+      <p>
+
+        Enter the OTP sent to your registered mobile number.
+
+      </p>
+
+
+      <div class="otp-inputs">
+
+        <input type="text" maxlength="1">
+        <input type="text" maxlength="1">
+        <input type="text" maxlength="1">
+        <input type="text" maxlength="1">
+        <input type="text" maxlength="1">
+        <input type="text" maxlength="1">
+
+      </div>
+
+
+      <button class="verify-btn" id="verifyOTP">
+
+        Verify OTP
+
+      </button>
+
+
+      <button class="resend-btn" id="resendOTP">
+
+        Resend OTP
+
+      </button>
+
+    </div>
+
+  </div>
+
+  <header class="sticky-header">
+    <div class="header-container is-fixed">
+
+
+      <nav>
+
+        <ul class="menu">
+          <li>
+            <a href="#ABC Rate Index" class="nav-link active">
+              ABC Rate Index
+            </a>
+          </li>
+
+          <li>
+            <a href="#calculator" class="nav-link">
+              Calculators
+            </a>
+          </li>
+
+          <li>
+            <a href="#how-to-apply" class="nav-link">
+              How To Apply
+            </a>
+          </li>
+
+          <li>
+            <a href="#Locators" class="nav-link">
+              Branch Locators
+            </a>
+          </li>
+
+          <li>
+            <a href="#eligibility" class="nav-link">
+              Eligibility
+            </a>
+          </li>
+
+
+
+          <li>
+            <a href="#fees" class="nav-link">
+              Fees & Charges
+            </a>
+          </li>
+
+
+          <li>
+            <a href="#faq" class="nav-link">
+              FAQs
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <section class="interest-strip" id="scrollstrip">
+
+
+    <div class="marquee">
+
+      <div class="marquee-content">
+
+        <span>Competitive Interest Rates Starting from Just 9% p.a.</span>
+        <span>Competitive Interest Rates Starting from Just 9% p.a.</span>
+        <span>Competitive Interest Rates Starting from Just 9% p.a.</span>
+        <span>Competitive Interest Rates Starting from Just 9% p.a.</span>
+        <span>Competitive Interest Rates Starting from Just 9% p.a.</span>
+
+        <!-- Duplicate for infinite loop -->
+        <span>Competitive Interest Rates Starting from Just 9% p.a.</span>
+        <span>Competitive Interest Rates Starting from Just 9% p.a.</span>
+        <span>Competitive Interest Rates Starting from Just 9% p.a.</span>
+        <span>Competitive Interest Rates Starting from Just 9% p.a.</span>
+        <span>Competitive Interest Rates Starting from Just 9% p.a.</span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!--
+ABC RATE INDEX SECTION
+-->
+
+  <section class="rate-index-section" id="ABC Rate Index">
+
+    <div class="container">
+
+      <!-- Top Header -->
+
+      <div class="rate-header">
+
+        <div class="rate-left">
+
+          <div class="live-status">
+
+            <span class="live-dot"></span>
+
+            <span class="live-text">
+              LIVE MARKET UPDATE
+            </span>
+
+          </div>
+
+          <h2>
+            ABC Rate Index
+          </h2>
+
+          <p>
+            Real-time valuation based on international market trends and IBJA benchmarks.
+          </p>
+
+        </div>
+
+        <div class="rate-right">
+
+          <div class="rate-tabs">
+
+            <button class="tab-btn active">
+              Daily Rate
+            </button>
+
+            <!-- <button class="tab-btn">
+                        Historical Trend
+                    </button> -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Cards -->
+      <div class="rate-slider">
+
+        <button class="rate-slider-arrow rate-slider-prev" type="button">
+          &#8592;
+        </button>
+
+        <div class="rate-slider-viewport">
+          <div class="rate-cards">
+
+            <!-- 18K -->
+            <div class="rate-card">
+              <span class="karat">
+                18 KARAT / PER GRAM
+              </span>
+
+              <h3 id="gold18">
+                ₹4,345.00
+              </h3>
+
+              <div class="trend bullish">
+                ↗ +0.45% (Bullish)
+              </div>
+            </div>
+
+            <!-- 19K -->
+            <div class="rate-card">
+              <span class="karat">
+                19 KARAT / PER GRAM
+              </span>
+
+              <h3 id="gold19">
+                ₹4,810.25
+              </h3>
+
+              <div class="trend bullish">
+                ↗ +0.42% (Bullish)
+              </div>
+            </div>
+
+            <!-- 20K -->
+            <div class="rate-card">
+              <span class="karat">
+                20 KARAT / PER GRAM
+              </span>
+
+              <h3 id="gold20">
+                ₹5,275.50
+              </h3>
+
+              <div class="trend bullish">
+                ↗ +0.38% (Bullish)
+              </div>
+            </div>
+
+            <!-- 21K -->
+            <div class="rate-card">
+              <span class="karat">
+                21 KARAT / PER GRAM
+              </span>
+
+              <h3 id="gold21">
+                ₹5,740.75
+              </h3>
+
+              <div class="trend bullish">
+                ↗ +0.35% (Bullish)
+              </div>
+            </div>
+
+            <!-- 22K -->
+            <div class="rate-card">
+              <span class="karat">
+                22 KARAT / PER GRAM
+              </span>
+
+              <h3 id="gold22">
+                ₹6,105.80
+              </h3>
+
+              <div class="trend bullish">
+                ↗ +0.32% (Bullish)
+              </div>
+            </div>
+
+
+            <div class="rate-card">
+              <span class="karat">
+                18 KARAT / PER GRAM
+              </span>
+
+              <h3 id="gold18">
+                ₹4,345.00
+              </h3>
+
+              <div class="trend bullish">
+                ↗ +0.45% (Bullish)
+              </div>
+            </div>
+
+            <!-- 19K -->
+            <div class="rate-card">
+              <span class="karat">
+                19 KARAT / PER GRAM
+              </span>
+
+              <h3 id="gold19">
+                ₹4,810.25
+              </h3>
+
+              <div class="trend bullish">
+                ↗ +0.42% (Bullish)
+              </div>
+            </div>
+
+            <!-- 20K -->
+            <div class="rate-card">
+              <span class="karat">
+                20 KARAT / PER GRAM
+              </span>
+
+              <h3 id="gold20">
+                ₹5,275.50
+              </h3>
+
+              <div class="trend bullish">
+                ↗ +0.38% (Bullish)
+              </div>
+            </div>
+
+            <!-- 21K -->
+            <div class="rate-card">
+              <span class="karat">
+                21 KARAT / PER GRAM
+              </span>
+
+              <h3 id="gold21">
+                ₹5,740.75
+              </h3>
+
+              <div class="trend bullish">
+                ↗ +0.35% (Bullish)
+              </div>
+            </div>
+
+            <!-- 22K -->
+            <div class="rate-card">
+              <span class="karat">
+                22 KARAT / PER GRAM
+              </span>
+
+              <h3 id="gold22">
+                ₹6,105.80
+              </h3>
+
+              <div class="trend bullish">
+                ↗ +0.32% (Bullish)
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <button class="rate-slider-arrow rate-slider-next" type="button">
+          &#8594;
+        </button>
+
+      </div>
+
+
+
+    </div>
+
+  </section>
+
+  <!-- five section counter -->
+
+  <section class="stats-section">
+
+    <div class="stats-container">
+
+      <div class="stat-box">
+
+        <h2 class="counter" data-target="68400">0</h2>
+
+        <p>EMPLOYEES</p>
+
+      </div>
+
+      <div class="stat-box">
+
+        <h2 class="counter" data-target="1740">0</h2>
+
+        <p>BRANCHES</p>
+
+      </div>
+
+      <div class="stat-box">
+
+        <h2>₹5.91 Lakh Cr.</h2>
+
+        <p>ASSETS UNDER MANAGEMENT</p>
+
+      </div>
+
+      <div class="stat-box">
+
+        <h2>₹2 Lakh Cr</h2>
+
+        <p>CONSOLIDATED LENDING BOOK</p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+
+
+  <!-- why choose us  six -->
+
+  <section class="why-choose-section">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <h2>
+          Why Choose Aditya Birla Capital
+        </h2>
+
+      </div>
+
+      <div class="why-grid">
+
+        <!-- Card 1 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <div class="icon-flipper">
+              <div class="icon-face front">
+                <img src="img/4 Day Grace Period.png" alt="4 Day Grace Period">
+              </div>
+              <div class="icon-face back">
+                <img src="img/4 Day Grace Period.png" alt="4 Day Grace Period">
+              </div>
+            </div>
+          </div>
+          <h3>4 Day Grace Period</h3>
+          <p>Never worry about missing a deadline, benefit from a 4-day buffer on your repayments.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <div class="icon-flipper">
+              <div class="icon-face front">
+                <img src="img/Zero Charges on Part Release.png" alt="Zero Charges on Part Release">
+              </div>
+              <div class="icon-face back">
+                <img src="img/Zero Charges on Part Release.png" alt="Zero Charges on Part Release">
+              </div>
+            </div>
+          </div>
+          <h3>Zero Charges on Part Release</h3>
+          <p>Release a portion of your gold anytime at absolutely no extra cost.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <div class="icon-flipper">
+              <div class="icon-face front">
+                <img src="img/No Foreclosure Charges.png" alt="No Foreclosure Charges">
+              </div>
+              <div class="icon-face back">
+                <img src="img/No Foreclosure Charges.png" alt="No Foreclosure Charges">
+              </div>
+            </div>
+          </div>
+          <h3>No Foreclosure Charges</h3>
+          <p>No penalty for pre-closure when you want to prepay your loan amount.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <div class="icon-flipper">
+              <div class="icon-face front">
+                <img src="img/Paperless Journey.png" alt="Paperless Journey">
+              </div>
+              <div class="icon-face back">
+                <img src="img/Paperless Journey.png" alt="Paperless Journey">
+              </div>
+            </div>
+          </div>
+          <h3>Paperless Journey</h3>
+          <p>From application to closure, 100% digital and hassle-free.</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <div class="icon-flipper">
+              <div class="icon-face front">
+                <img src="img/Rate Stays.png" alt="Rate Stays, Even After Part Release">
+              </div>
+              <div class="icon-face back">
+                <img src="img/Rate Stays.png" alt="Rate Stays, Even After Part Release">
+              </div>
+            </div>
+          </div>
+          <h3>Rate Stays, Even After Part Release</h3>
+          <p>Your interest rate remains unchanged even after you release part of your gold.</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <div class="icon-flipper">
+              <div class="icon-face front">
+                <img src="img/Transparent Valuation.png" alt="Transparent Valuation">
+              </div>
+              <div class="icon-face back">
+                <img src="img/Transparent Valuation.png" alt="Transparent Valuation">
+              </div>
+            </div>
+          </div>
+          <h3>Transparent Valuation</h3>
+          <p>No hidden deductions. We use laser-purity checks in your presence, ensuring every milligram is accounted
+            for.</p>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <div class="icon-flipper">
+              <div class="icon-face front">
+                <img src="img/Repayment Options.png" alt="Repayment Options">
+              </div>
+              <div class="icon-face back">
+                <img src="img/Repayment Options.png" alt="Repayment Options">
+              </div>
+            </div>
+          </div>
+          <h3>Repayment Options</h3>
+          <p>Repay interest only, bullet payments, or part payment. Tailored plans that suit your cash flow needs.</p>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <div class="icon-flipper">
+              <div class="icon-face front">
+                <img src="img/Sovereign Protection.png" alt="Sovereign Protection">
+              </div>
+              <div class="icon-face back">
+                <img src="img/Sovereign Protection.png" alt="Sovereign Protection">
+              </div>
+            </div>
+          </div>
+          <h3>Sovereign Protection</h3>
+          <p>Your assets are protected by global insurance leaders and stored in RBI-compliant vaults with 24/7
+            surveillance.</p>
+        </div>
+
+      </div>
+
+      <p style="font-family: Anek Latin; font-size: 14px; font-weight: 400;  letter-spacing: 0.5px; color: #44474E; padding: 50px 10px 10px 10px; margin: 0;">
+    Terms and conditions apply*
+</p>
+
+    </div>
+
+  </section>
+
+
+  <!-- loan  cal-->
+
+
+
+
+
+  <section class="glc" id="calculator" -labelledby="calculatorTitle">
+    <div class="glc-container">
+
+      <header class="glc-header">
+        <h1 id="calculatorTitle">Gold Loan Calculator</h1>
+        <p>Discover the instant value of your gold. Fast, secure, and transparent calculations tailored for your
+          financial freedom.</p>
+      </header>
+
+      <!-- TABS -->
+      <div class="glc-tabs" role="tablist" aria-label="Gold loan calculation method">
+        <button class="glc-tab active" id="weightTab" type="button" role="tab" aria-selected="true" data-tab="weight">
+          Calculate by Gold Weight
+        </button>
+        <button class="glc-tab" id="amountTab" type="button" role="tab" aria-selected="false" data-tab="amount">
+          Calculate by Loan Amount
+        </button>
+        <button class="glc-tab" id="interestTab" type="button" role="tab" aria-selected="false" data-tab="interest">
+          Interest Calculator
+        </button>
+      </div>
+
+      <!-- MAIN GRID -->
+      <div class="glc-grid">
+
+        <!-- LEFT: FORM -->
+        <div class="glc-form">
+
+          <!-- WEIGHT PANEL -->
+          <div class="glc-panel active" id="weightPanel">
+
+            <div class="form-group">
+              <label class="field-label" for="goldTypeSelect">Gold Type</label>
+              <select class="select-field" id="goldTypeSelect">
+                <option value="ornament" selected>Ornaments</option>
+                <option value="coin">Gold Coin</option>
+              </select>
+            </div>
+
+            <div class="form-group" id="purityGroupWeight">
+              <label class="field-label">Select Gold Purity</label>
+              <div class="purity-row purity-row-weight" id="purityButtonsWeight"></div>
+            </div>
+
+            <div class="form-group">
+              <label class="field-label" for="weightInput">Gold Weight (in Grams)</label>
+              <div class="input-box">
+                <input id="weightInput" type="number" min="1" max="1000" step="1" value="10" />
+                <span class="unit">Grams</span>
+              </div>
+              <input class="range-slider" id="weightSlider" type="range" min="1" max="1000" step="1" value="10" />
+              <p class="field-help" id="weightHelpText">*Please type in the range of 1 to 1000 grams</p>
+            </div>
+
+            <div class="rate-card-loan">
+              <div>
+                <span class="rate-label">Current Gold Rate</span>
+                <strong class="gold-rate-value">₹0</strong>
+                <span class="rate-unit">per gram</span>
+                <!-- <small class="rate-updated">Development rate</small> -->
+              </div>
+              <!-- <button class="refresh-btn" id="refreshRateWeight" type="button" aria-label="Refresh gold rate">↻</button> -->
+            </div>
+
+            <button class="btn-apply" type="button">Apply Now</button>
+          </div>
+
+          <!-- AMOUNT PANEL -->
+          <div class="glc-panel" id="amountPanel" hidden>
+
+            <div class="form-group">
+              <label class="field-label">Select Gold Purity</label>
+              <div class="purity-row purity-row-compact" id="purityButtonsAmount"></div>
+            </div>
+
+            <div class="form-group">
+              <label class="field-label" for="loanAmountInput">Loan Amount (₹)</label>
+              <div class="input-box">
+                <input id="loanAmountInput" type="number" min="5000" max="50000000" step="1000" value="5000" />
+              </div>
+              <input class="range-slider" id="loanAmountSlider" type="range" min="5000" max="50000000" step="1000"
+                value="5000" />
+              <div class="help-row">
+                <span>Min: ₹5,000</span>
+                <span>Max: ₹5cr</span>
+              </div>
+            </div>
+
+            <div class="rate-card-loan">
+              <div>
+                <span class="rate-label">Current Gold Rate</span>
+                <strong class="gold-rate-value">₹0</strong>
+                <span class="rate-unit">per gram</span>
+                <!-- <small class="rate-updated">Development rate</small> -->
+              </div>
+              <!-- <button class="refresh-btn" id="refreshRateAmount" type="button" aria-label="Refresh gold rate">↻</button> -->
+            </div>
+
+            <button class="btn-apply" type="button">Apply Now</button>
+          </div>
+
+          <!-- INTEREST PANEL -->
+          <div class="glc-panel" id="interestPanel" hidden>
+
+            <div class="panel-heading">
+              <span>Interest Calculator</span>
+              <span class="info-icon" title="Loan Amount = (Weight × Purity Factor × Gold Rate) × LTV">i</span>
+            </div>
+
+            <div class="form-group">
+              <div class="label-value-row">
+                <label class="field-label" for="interestWeightInput">Gold Weight (gm)</label>
+                <input class="mini-input" id="interestWeightInput" type="number" min="1" max="1000" step="1"
+                  value="10" />
+              </div>
+              <input class="range-slider" id="interestWeightSlider" type="range" min="1" max="1000" step="1"
+                value="10" />
+            </div>
+
+            <div class="form-group">
+              <label class="field-label" for="interestPurity">Gold Purity (Karat)</label>
+              <select class="select-field" id="interestPurity"></select>
+            </div>
+
+            <div class="form-group">
+              <div class="label-value-row">
+                <label class="field-label" for="interestRateInput">Interest Rate (% p.a.)</label>
+                <input class="mini-input" id="interestRateInput" type="number" min="9" max="27" step="0.01" value="9" />
+              </div>
+              <input class="range-slider" id="interestRateSlider" type="range" min="9" max="27" step="0.01" value="9" />
+            </div>
+
+            <div class="form-group">
+              <div class="label-value-row">
+                <label class="field-label" for="tenureInput">Tenure (Months)</label>
+                <input class="mini-input" id="tenureInput" type="number" min="6" max="12" step="1" value="12" />
+              </div>
+              <input class="range-slider" id="tenureSlider" type="range" min="6" max="12" step="1" value="12" />
+            </div>
+
+            <!-- <div class="note-box">
+              Calculation: Loan Amount = (Weight × Purity Factor × Gold Rate) × LTV
+            </div> -->
+
+            <button class="btn-apply" type="button">Apply for Loan</button>
+          </div>
+
+        </div>
+
+        <!-- RIGHT: RESULT -->
+        <div class="glc-result">
+
+          <div class="result-ring">
+            <strong class="result-value" id="resultValue">₹0</strong>
+            <span class="result-label" id="resultLabel">Eligible Loan Amount</span>
+          </div>
+
+          <!-- weight breakdown -->
+          <div class="breakdown-list" id="weightBreakdown">
+
+  <div class="breakdown-row muted"
+       style="display:flex;justify-content:space-between;align-items:center;padding:16px 18px;background:#f5f5f5;border-radius:12px;margin-bottom:12px;">
+    <span style="display:flex;align-items:center;font-size:16px;color:#333;font-weight:500;">
+      <i style="width:10px;height:10px;background:#cfcfcf;border-radius:50%;display:inline-block;margin-right:10px;"></i>
+      Ornament Value
+    </span>
+    <strong id="ornamentValue" style="font-size:18px;font-weight:700;color:#111;">₹0.00</strong>
+  </div>
+
+  <div class="breakdown-row highlight"
+       style="display:flex;justify-content:space-between;align-items:center;padding:16px 18px;background:#fff7f7;border-radius:12px;">
+    <span style="display:flex;align-items:center;font-size:16px;font-weight:600;color: #BA1A1A;">
+      <i style="width:10px;height:10px;background: #BA1A1A;border-radius:50%;display:inline-block;margin-right:10px;"></i>
+      Eligible Loan
+    </span>
+    <strong id="eligibleLoanOutput" style="font-size:18px;font-weight:700;color: #BA1A1A;">₹0.00</strong>
+  </div>
+
+</div>
+
+          <!-- amount breakdown -->
+          <div class="breakdown-list" id="amountBreakdown" hidden>
+            <div class="breakdown-row muted">
+              <span>Loan Amount</span>
+              <strong id="amountLoanAmountOutput">₹0</strong>
+            </div>
+            <!-- <div class="breakdown-row highlight">
+              <span>LTV Applied</span>
+              <strong id="ltvAppliedOutput">0%</strong>
+            </div> -->
+          </div>
+
+          <!-- interest breakdown -->
+          <div class="breakdown-list" id="interestBreakdown" hidden>
+            <div class="breakdown-row muted">
+              <span>Loan Amount</span>
+              <strong id="interestLoanAmount">₹0</strong>
+            </div>
+            <div class="breakdown-row plain">
+              <span>Monthly Interest</span>
+              <strong id="monthlyInterestOutput">₹0</strong>
+            </div>
+            <div class="breakdown-row muted">
+              <span>Total Interest</span>
+              <strong id="totalInterestOutput">₹0</strong>
+            </div>
+            <div class="breakdown-row solid">
+              <span>Total Payable</span>
+              <strong id="totalPaymentOutput">₹0</strong>
+            </div>
+          </div> 
+
+          <!-- promo card (weight tab only) -->
+          <div class="promo-card" id="promoCard">
+            <div class="promo-title">Interest Rate</div>
+            <div class="promo-box">
+              <span>Minimum Interest Rate</span>
+              <strong>9% p.a</strong>
+            </div>
+            <p class="promo-range">(Range: 9% - 27% p.a)</p>
+            <p class="promo-note">Interest rates vary as per the Scheme and credit assessment of the borrower.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="glc-disclaimer">
+        <strong></strong>
+        *The displayed amount is an approximate value. The final loan amount depends on the
+        gold valuation conducted at the branch.<br>
+        *Your gold's market value is calculated based on a 30-day average of the 22-Karat gold rate, with the purity
+        assumed to be 22 Karats for valuation purposes.<br>
+        *You can avail loan amount based on the LTV prescribed under RBI guidelines, ensuring maximum value derived from your gold.
+        <br>© 2026 ABCL Financial Services. All rights reserved. Registered NBFC in India.
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- <seven section -->
+
+  <section class="how-to-apply " id="how-to-apply">
+    <div class="container">
+
+      <div class="section-heading">
+        <h2>How To Apply</h2>
+        <p>Simple, professional, and efficient steps to get your loan.</p>
+      </div>
+
+      <div class="steps-row">
+
+        <!-- Step 1: Apply Online -->
+        <div class="step">
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round">
+              <line x1="4" y1="6" x2="16" y2="6" />
+              <line x1="4" y1="10" x2="14" y2="10" />
+              <line x1="4" y1="14" x2="11" y2="14" />
+              <path d="M14 17l6-6 3 3-6 6h-3v-3z" />
+            </svg>
+          </div>
+          <h3>Apply Online</h3>
+          <p>Fill out the quick form on our portal.</p>
+        </div>
+
+        <!-- Step 2: Visit Branch -->
+        <div class="step">
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M12 22s7-7.2 7-13a7 7 0 1 0-14 0c0 5.8 7 13 7 13z" />
+              <circle cx="12" cy="9" r="2.4" />
+            </svg>
+          </div>
+          <h3>Visit Branch</h3>
+          <p>Find a location nearest to your home.</p>
+        </div>
+
+        <!-- Step 3: Gold Valuation -->
+        <div class="step">
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round">
+              <line x1="12" y1="3" x2="12" y2="20" />
+              <line x1="5" y1="7" x2="19" y2="7" />
+              <path d="M5 7L2 13a3 3 0 0 0 6 0L5 7z" />
+              <path d="M19 7l-3 6a3 3 0 0 0 6 0l-3-6z" />
+              <line x1="8" y1="21" x2="16" y2="21" />
+            </svg>
+          </div>
+          <h3>Gold Valuation</h3>
+          <p>Purity check done in your presence.</p>
+        </div>
+
+        <!-- Step 4: Documentation -->
+        <div class="step">
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z" />
+              <path d="M14 2v6h6" />
+              <line x1="8" y1="13" x2="16" y2="13" />
+              <line x1="8" y1="17" x2="13" y2="17" />
+            </svg>
+          </div>
+          <h3> KYC & Documents</h3>
+          <p>Provide your basic KYC details and required documents at the branch.</p>
+        </div>
+
+        <!-- Step 5: Disbursal -->
+        <div class="step">
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round">
+              <polygon class="fill-part" points="12,2 22,8 2,8" stroke="none" />
+              <line x1="4" y1="8" x2="4" y2="19" />
+              <line x1="9" y1="8" x2="9" y2="19" />
+              <line x1="15" y1="8" x2="15" y2="19" />
+              <line x1="20" y1="8" x2="20" y2="19" />
+              <line x1="2" y1="22" x2="22" y2="22" />
+            </svg>
+          </div>
+          <h3>Disbursal</h3>
+          <p>Instant transfer to your bank account.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- map locator -->
+
+
+  <div class="locator" id="Locators">
+    <div class="eyebrow">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M12 2C7.03 2 3 6.03 3 11c0 5.25 7.05 10.24 7.35 10.45.2.14.45.14.65 0C11.95 21.24 19 16.25 19 11c0-4.97-4.03-9-9-9zm0 12a3 3 0 110-6 3 3 0 010 6z" />
+      </svg>
+      NATIONWIDE PRESENCE
+    </div>
+    <h1>Locate your nearest Gold loan branch</h1>
+
+    <div class="content">
+      <!-- SIDEBAR -->
+      <div class="sidebar">
+        <div class="search-box">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="7" />
+            <path d="M21 21l-4.3-4.3" />
+          </svg>
+          <input id="searchInput" type="text" placeholder="Enter city or pincode..." />
+        </div>
+        <div class="sidebar-meta">
+          <span class="nearby-count" id="nearbyCount">3 NEARBY PARTNERS</span>
+          <button class="use-location" id="useLocationBtn">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="3" />
+              <path d="M12 2v3M12 19v3M2 12h3M19 12h3" />
+            </svg>
+            Use Current Location
+          </button>
+        </div>
+        <div class="list" id="branchList"></div>
+      </div>
+
+      <!-- MAP -->
+      <div class="map-wrap" id="mapWrap">
+        <div class="map-canvas" id="mapCanvas">
+          <svg class="roads" viewBox="0 0 600 560" preserveAspectRatio="none">
+            <path d="M0,120 C150,90 300,160 600,110" stroke="#DCD9D2" stroke-width="3" fill="none" />
+            <path d="M0,300 C180,280 380,340 600,300" stroke="#DCD9D2" stroke-width="4" fill="none" />
+            <path d="M60,0 C90,180 40,360 90,560" stroke="#DCD9D2" stroke-width="3" fill="none" />
+            <path d="M420,0 C400,200 460,380 430,560" stroke="#DCD9D2" stroke-width="3" fill="none" />
+          </svg>
+        </div>
+
+        <div class="legend">
+          <div class="item"><span class="swatch flag"></span>Flagship</div>
+          <div class="item"><span class="swatch partner"></span>Partner</div>
+        </div>
+
+        <div class="directions-banner" id="directionsBanner">
+          <div class="db-text">Directions to <b id="dbName"></b></div>
+          <button class="dismiss" id="dismissBanner">&times;</button>
+        </div>
+
+        <div id="markersLayer"></div>
+
+        <div class="popup" id="popup">
+          <div class="popup-bar"></div>
+          <div class="popup-inner">
+            <div class="popup-head">
+              <div class="popup-title" id="popupTitle"></div>
+              <button class="popup-close" id="popupClose">&times;</button>
+            </div>
+            <div class="popup-deals">Deals in: <span id="popupDeals"></span></div>
+            <div class="popup-branch"><b>Branch:</b> <span id="popupBranch"></span></div>
+            <div class="popup-row">
+              <div class="popup-icon">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="M12 2C7.6 2 4 5.6 4 10c0 5.5 8 12 8 12s8-6.5 8-12c0-4.4-3.6-8-8-8z" />
+                  <circle cx="12" cy="10" r="2.6" />
+                </svg>
+              </div>
+              <span id="popupAddress"></span>
+            </div>
+            <div class="popup-row">
+              <div class="popup-icon">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path
+                    d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.7a2 2 0 01-.5 2.1L8 9.7a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.9.3 1.8.5 2.7.6a2 2 0 011.7 2z" />
+                </svg>
+              </div>
+              <span id="popupPhone"></span>
+            </div>
+            <a class="popup-directions" id="popupDirections" href="#" target="_blank" rel="noopener">
+              <div class="popup-icon">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="M3 11l18-8-8 18-2-8-8-2z" />
+                </svg>
+              </div>
+              <span>Get Directions</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="zoom-controls">
+          <button class="zoom-btn" id="zoomIn">+</button>
+          <button class="zoom-btn" id="zoomOut">&minus;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- eligibility -->
+
+  <section class="eligibility-section" id="eligibility">
+    <div class="container">
+
+      <!-- Header -->
+      <header class="section-header">
+        <p class="eyebrow"><span class="live-dot"></span></span>Eligibility &amp; Documents</p>
+        <h1 class="section-title">Eligibility Criteria</h1>
+        <p class="section-subtitle">
+          Transparency is our priority. Know exactly what you need before you start your application journey
+        </p>
+      </header>
+
+      <!-- Content -->
+      <div class="content-grid">
+
+        <!-- Eligibility Accordion Card -->
+        <div class="card eligibility-card">
+          <div class="card-heading">
+            <span class="icon-badge icon-badge--pink" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="8" r="3.25" stroke="currentColor" stroke-width="1.6" />
+                <path d="M5 19c0-3.31 3.13-6 7-6s7 2.69 7 6" stroke="currentColor" stroke-width="1.6"
+                  stroke-linecap="round" />
+              </svg>
+            </span>
+            <h2>Eligibility</h2>
+          </div>
+
+          <ul class="accordion" role="list">
+            <li class="accordion-item">
+              <button class="accordion-trigger" type="button" aria-expanded="false">
+                <span>Age requirements</span>
+                <svg class="chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+              <div class="accordion-panel">
+                <p>Applicants must be a minimum of 18 years old and should not exceed 72 years of age at the time of
+                  loan booking.</p>
+              </div>
+            </li>
+
+            <li class="accordion-item">
+              <button class="accordion-trigger" type="button" aria-expanded="false">
+                <span>Accepted gold categories</span>
+                <svg class="chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+              <div class="accordion-panel">
+                <p>Gold Ornaments & Jewellery,  Gold Coins of 24 Karat</p>
+              </div>
+            </li>
+
+            <li class="accordion-item">
+              <button class="accordion-trigger" type="button" aria-expanded="false">
+                <span>Purity requirements</span>
+                <svg class="chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+              <div class="accordion-panel">
+                <p>Gold jewellery of 18K to 22K purity is generally accepted for pledge, while gold coins of 24K purity
+                  is also eligible.</p>
+              </div>
+            </li>
+
+            <li class="accordion-item">
+              <button class="accordion-trigger" type="button" aria-expanded="false">
+                <span>Loan limits</span>
+                <svg class="chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+              <div class="accordion-panel">
+               <p>Avail loan from ₹5,000 to ₹5 Cr</p>
+              </div>
+            </li>
+
+            <!-- <li class="accordion-item">
+              <button class="accordion-trigger" type="button" aria-expanded="false">
+                <span>PAN requirements</span>
+                <svg class="chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+              <div class="accordion-panel">
+                <p>PAN is mandatory for loans above ₹1 lakhs </p>
+              </div>
+            </li> -->
+          </ul>
+        </div>
+
+        <!-- Documents Required Card -->
+        <div class="card documents-card">
+          <div class="card-heading">
+            <span class="icon-badge icon-badge--outline" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 3h5l5 5v10a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" stroke="currentColor"
+                  stroke-width="1.6" stroke-linejoin="round" />
+                <path d="M13 3v5h5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+              </svg>
+            </span>
+            <h2>Documents Required</h2>
+          </div>
+
+          <ul class="doc-list" role="list">
+            <li class="doc-item">
+              <span class="doc-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6" />
+                  <circle cx="8.5" cy="10.5" r="1.75" stroke="currentColor" stroke-width="1.4" />
+                  <path d="M5.5 16c.6-1.7 2-2.5 3-2.5s2.4.8 3 2.5" stroke="currentColor" stroke-width="1.4"
+                    stroke-linecap="round" />
+                  <path d="M14 10h4M14 13h4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+                </svg>
+              </span>
+              <div class="doc-text">
+                <h3>Identity Proof</h3>
+                <p>Aadhaar, Passport, Driving License, Voter ID, Job Copy of Job card issued by NREGA duly signed by an officer of the State Government, Letter issued by the National Population Register “NPR” containing details of name and address.</p>
+              </div>
+            </li>
+
+            <li class="doc-item">
+              <span class="doc-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 21s7-6.1 7-11.5S15.9 2 12 2 5 4.6 5 9.5 12 21 12 21z" stroke="currentColor"
+                    stroke-width="1.6" stroke-linejoin="round" />
+                  <circle cx="12" cy="9.5" r="2.25" stroke="currentColor" stroke-width="1.5" />
+                </svg>
+              </span>
+              <div class="doc-text">
+                <h3>Address Proof</h3>
+                <p>Aadhaar, Passport, Driving License, Voter ID, Letter issued by the National Population Register “NPR” containing details of name and address.</p>
+              </div>
+            </li>
+
+            <li class="doc-item">
+              <span class="doc-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="3" y="6" width="18" height="12" rx="2" stroke="currentColor" stroke-width="1.6" />
+                  <path d="M3 10h18" stroke="currentColor" stroke-width="1.6" />
+                  <path d="M6.5 14h4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+                </svg>
+              </span>
+              <div class="doc-text">
+                <h3>PAN Card</h3>
+                <p>Mandatory for verification and high-value transactions.</p>
+              </div>
+            </li>
+
+           
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+<!-- 8 section  Standard Charges
+& Service Fees-->
+
+  <section class="service-fees-section" id="fees">
+
+    <div class="service-container">
+
+      <div class="section-top">
+        <!-- <span class="live-dot"></span>
+
+            <span class="badge">
+                TRANSPARENCY FIRST
+            </span> -->
+
+        <p class="badge"><span class="live-dot"></span></span> TRANSPARENCY FIRST</p>
+
+        <h2>
+          Standard Charges <br>
+          & Service Fees
+        </h2>
+
+        
+
+      </div>
+
+      <div class="fees-table">
+
+        <div class="table-header">
+
+          <div>PARTICULARS</div>
+
+          <div>CHARGES</div>
+
+        </div>
+
+        <div class="table-row">
+          <div>Processing Fee</div>
+          <div><strong>Up to 2%</strong></div>
+        </div>
+
+        <div class="table-row">
+          <div>MTM Charges on more than 90% LTV</div>
+          <div><strong>Flat 500/-</strong> (Capped once per Quarter) </div>
+        </div>
+
+        <div class="table-row">
+          <div>Auction Intimation Notice Charges</div>
+          <div>Rs. 200 per Notice Charges</div>
+        </div>
+
+        <div class="table-row">
+          <div>Post Auction Charges</div>
+          <div>Rs. 1,500</div>
+        </div>
+
+        <div class="table-row">
+          <div>Cash Handling Charges</div>
+          <div>
+            ₹20 or 0.20% of Cash transaction value
+            <small>(whichever is higher)</small>
+          </div>
+        </div>
+
+        <div class="table-row">
+          <div>Franking Charges applicable as per state including cess</div>
+          <div>Actuals where ever applicable</div>
+        </div>
+
+        <div class="table-row">
+          <div>Penal Charge</div>
+          <div class="red-text">
+            6.00% p.a.
+          </div>
+        </div>
+
+        <div class="table-row">
+          <div>SMS Charges</div>
+          <div>Rs.10 Flat Per Loan</div>
+        </div>
+
+        <div class="table-row">
+          <div>Foreclosure Charges</div>
+
+          <div>
+            <strong>NIL</strong>
+            <small>
+              Minimum of 10 days interest will be charged if loan is closed within 10 days
+            </small>
+          </div>
+
+        </div>
+
+        <div class="table-row">
+          <div>Credit Appraisal Fee</div>
+
+          <div>
+
+            <div>&lt; 2.5 Lakh &nbsp;&nbsp;&nbsp; <strong>Rs.25</strong></div>
+
+            <div>&gt; 2.5 Lakh &nbsp;&nbsp;&nbsp; <strong>Rs.75</strong></div>
+
+          </div>
+
+        </div>
+
+        <div class="table-row">
+          <div>Safe Custody Charges</div>
+
+          <div>
+            Rs.5/per gram per month
+
+            <small>
+              payable at the time of closure or renewal
+            </small>
+
+          </div>
+
+        </div>
+
+        <div class="table-row">
+          <div>Overdue Notice Charges</div>
+
+          <div>
+            Rs.200
+            per Notice (once in 90 days)
+          </div>
+
+        </div>
+
+        <div class="table-footer">
+
+          * Charges are subject to change based on regulatory guidelines and company policy.
+          Terms and conditions apply.
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- Charges and Documents -->
+
+  
+
+<section class="charges-section">
+  <div class="charges-container">
+
+    <h2 class="charges-title">Charges and Documents</h2>
+    <p class="charges-subtitle">
+      Transparent and accessible documentation for your peace of mind.<br>
+      Download official terms in your preferred language.
+    </p>
+
+    <div class="charges-box">
+
+      <!-- Document type dropdown -->
+      <div class="doc-select-wrap">
+        <button class="doc-select" id="docSelectBtn" aria-haspopup="listbox" aria-expanded="false">
+          <span id="docSelectLabel">MITC</span>
+          <svg class="chevron" width="14" height="14" viewBox="0 0 24 24" fill="none">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <ul class="doc-dropdown" id="docDropdown" role="listbox">
+          <li role="option" data-doc="mitc" class="active">MITC</li>
+          <li role="option" data-doc="soc">Schedule of Charges</li>
+          <li role="option" data-doc="gvm">Gold Valuation Methodology</li>
+        </ul>
+      </div>
+
+      <span class="divider"></span>
+
+      <!-- Language links -->
+      <div class="lang-links" id="langLinks">
+        <a href="#" class="lang-link" data-lang="en" target="_blank" rel="noopener">
+          English <span class="arrow">↗</span>
+        </a>
+        <span class="divider"></span>
+        <a href="#" class="lang-link" data-lang="hi" target="_blank" rel="noopener">
+          Hindi <span class="arrow">↗</span>
+        </a>
+        <span class="divider"></span>
+        <a href="#" class="lang-link" data-lang="mr" target="_blank" rel="noopener">
+          Marathi <span class="arrow">↗</span>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- 12 section  faqs-->
+
+
+  <section class="faq-section" id="faq">
+    <div class="container">
+
+      <!-- Header -->
+      <header class="faq-header">
+        <h1 class="faq-title">Frequently Asked Questions</h1>
+        <p class="faq-subtitle">Everything you need to know about partnering with Aditya Birla Capital.</p>
+      </header>
+
+      <!-- Accordion -->
+      <div class="faq-list" id="faqList">
+
+        <div class="faq-item is-open">
+          <button class="faq-question" type="button" aria-expanded="true">
+            <span>How can I repay my gold loan?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none">
+              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>You can repay your gold loan via bullet repayment, at tenure-end, or interest-only payments. Aureate
+              Finance offers flexible gold loan repayment options to match your cash flow and preference.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Is part-release of pledged gold allowed?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none">
+              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Yes, part-release of pledged gold is allowed without the need to close the entire loan with no
+              additional charges, subject to repayment of applicable dues. Borrowers can also make partial
+              principal repayments at any time to reduce the outstanding amount and interest liability.
+              Additionally, the loan may be foreclosed before the end of the tenure by repaying the full outstanding
+              amount. This flexibility enables effective loan management and closure.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>What happens in case of non-payment?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none">
+              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Non-payment may attract penal charges and, if the dues remain unpaid, the pledged gold may be
+              auctioned in accordance with applicable regulations and loan terms.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Are there any additional charges?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none">
+              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Additional charges such as processing fees, valuation charges, penal charges, and other applicable
+              fees may apply as per the loan application</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>How can I avoid rejection of my gold loan application?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none">
+              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Ensure you meet the eligibility criteria, submit complete and valid documents, and pledge gold that
+              meets the lender’s accepted purity and valuation standards.</p>
+          </div>
+        </div>
+
+        <div class="faq-item faq-item--extra">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Which gold items are accepted for a gold loan?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none">
+              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>
+              You can use gold as collateral for the loan, provided it is of at least 18 Karat purity and gold coin of
+              24
+              Karat purity. However, remember that loans are not granted against 24-Karat gold bars and biscuits,
+              bullions, digital gold, gold bonds etc.</p>
+          </div>
+        </div>
+
+        <div class="faq-item faq-item--extra">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>How do fluctuations in gold prices affect gold loan?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none">
+              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>
+              The most significant factor affecting a gold loan is the Loan-to-Value (LTV) ratio, which is the ratio of
+              the loan amount to the value of the pledged gold. When gold prices rise, borrowers can get larger
+              loan amounts, and vice versa. Lenders monitor gold price trends to determine the standard gold
+              value for a smooth lending experience. The LTV ratio is also based on the purity of the gold, directly
+              tied to gold prices.
+              Additionally, in case of fluctuations in gold prices during the loan tenure, you may be required to
+              provide margin money on the existing loan amount to maintain the RBI-prescribed LTV limits</p>
+          </div>
+        </div>
+
+        <!-- Extra items — hidden until "View More" is clicked -->
+
+
+        <div class="faq-item faq-item--extra">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span> How is the gold kept safe?
+            </span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none">
+              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>Our branches follow robust security protocols, including multiple key custodians and centrally
+              controlled access. Pledged gold is stored in vaults under 24x7 CCTV surveillance, along with
+              enhanced branch security measures such as guards to ensure its safet</p>
+          </div>
+        </div>
+
+        <div class="faq-item faq-item--extra">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Can I avail more than one gold loan?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none">
+              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Yes, you can avail multiple loans with us</p>
+          </div>
+        </div>
+
+        <div class="faq-item faq-item--extra">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Are precious stones, gems, or other embedded materials considered during gold valuation?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none">
+              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>
+              For valuation purposes, only the intrinsic value of gold in the eligible collateral is considered. No
+              additional value is assigned for precious stones, gems, or any other embedded cost elements in the
+              ornament</p>
+          </div>
+        </div>
+
+        <div class="faq-item faq-item--extra">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>What is the minimum and maximum loan amount available under Aditya Birla Capital Gold Loan?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none">
+              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>
+              The minimum Gold Loan amount available is ₹5,000, while the maximum loan amount is ₹50 Cr.
+              Enhanced due diligence may be applicable for loan amounts above ₹50 Cr, as per internal
+              policies and regulatory requirements.</p>
+          </div>
+        </div>
+
+         <div class="faq-item faq-item--extra">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>How is the interest on a Gold Loan calculated?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none">
+              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>
+              The interest payable on a Gold Loan is calculated based on the loan amount, applicable interest rate, loan tenure, and the repayment option selected.
+ 
+Formula:
+ 
+Interest Payable = (Loan Amount × Annual Interest Rate × Loan Tenure in Months) ÷ (12 × 100)
+ 
+Example:
+ 
+If you avail a Gold Loan of ₹1,00,000 at an interest rate of 12% p.a. for a tenure of 6 months:
+ 
+•  Interest Payable: ₹6,000
+•  Total Amount Payable: ₹1,06,000
+ 
+Note: The actual interest payable may vary depending on the repayment option selected, applicable charges, and the terms and conditions of the loan.</p>
+          </div>
+        </div>
+
+
+      </div>
+
+      <!-- View More / View Less CTA -->
+      <div class="faq-cta-wrap">
+        <button class="faq-toggle-btn" id="faqToggleBtn" type="button" aria-expanded="false" aria-controls="faqList">
+          <span class="faq-toggle-label">View More</span>
+          <!-- <svg class="faq-toggle-icon" viewBox="0 0 24 24" fill="none">
+            <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg> -->
+        </button>
+      </div>
+
+
+
+      <path d="M12 19V5M5 12l7-7 7 7"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"></path>
+
+    </div>
+  </section>
+
+
+
+
+  <!-- review -->
+
+  <!-- <section class="testimonials-section">
+    <div class="container">
+
+    
+      <header class="section-header">
+        <h1 class="section-title">Trusted by Thousands of Happy Customers</h1>
+        <p class="section-subtitle">Real stories from people who achieved their financial goals with ABCL Finance.</p>
+      </header>
+
+     
+      <div class="slider">
+        <button class="slider-arrow slider-arrow--prev" type="button" aria-label="Previous testimonials">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+
+        <div class="slider-track" id="sliderTrack">
+
+          
+          <article class="review-card review-card--text">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review-text">"The Gold Loan process was incredibly smooth. I needed urgent funds for my daughter's
+              education, and ABCL Finance offered the best rates with minimal paperwork. Truly a life-saver."</p>
+            <div class="review-person">
+              <span class="review-avatar" style="background:#F2C6B4">RK</span>
+              <div class="review-person-info">
+                <p class="review-name">Rajesh K.</p>
+                <p class="review-location">Mumbai, India</p>
+              </div>
+            </div>
+          </article>
+
+         
+          <article class="review-card review-card--video">
+            <div class="video-frame" data-video-src="">
+              <div class="video-thumb video-thumb--placeholder"
+                style="background:linear-gradient(135deg,#E1453B,#7A1C17)">
+                <svg class="video-thumb-icon" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="8" r="3.4" stroke="currentColor" stroke-width="1.6" />
+                  <path d="M4.5 20c0-4 3.4-7 7.5-7s7.5 3 7.5 7" stroke="currentColor" stroke-width="1.6"
+                    stroke-linecap="round" />
+                </svg>
+              </div>
+              <button class="video-play-btn" type="button" aria-label="Play video testimonial">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M8 5v14l11-7L8 5z" fill="currentColor" />
+                </svg>
+              </button>
+              <video class="video-el" playsinline controls></video>
+            </div>
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <div class="review-person">
+              <span class="review-avatar" style="background:#C9B8E8">AM</span>
+              <div class="review-person-info">
+                <p class="review-name">Ananya M.</p>
+                <p class="review-location">Bangalore, India</p>
+              </div>
+            </div>
+          </article>
+
+          
+          <article class="review-card review-card--text">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review-text">"I've used several financial services, but the personalized attention at ABCL Finance
+              is unmatched. Their instant loan disbursement helped me expand my business right when I needed it."</p>
+            <div class="review-person">
+              <span class="review-avatar" style="background:#AFD4C8">VS</span>
+              <div class="review-person-info">
+                <p class="review-name">Vikram S.</p>
+                <p class="review-location">Delhi, India</p>
+              </div>
+            </div>
+          </article>
+
+          
+          <article class="review-card review-card--video">
+            <div class="video-frame" data-video-src="">
+              <div class="video-thumb video-thumb--placeholder"
+                style="background:linear-gradient(135deg,#4A3F8C,#1A1533)">
+                <svg class="video-thumb-icon" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="8" r="3.4" stroke="currentColor" stroke-width="1.6" />
+                  <path d="M4.5 20c0-4 3.4-7 7.5-7s7.5 3 7.5 7" stroke="currentColor" stroke-width="1.6"
+                    stroke-linecap="round" />
+                </svg>
+              </div>
+              <button class="video-play-btn" type="button" aria-label="Play video testimonial">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M8 5v14l11-7L8 5z" fill="currentColor" />
+                </svg>
+              </button>
+              <video class="video-el" playsinline controls></video>
+            </div>
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <div class="review-person">
+              <span class="review-avatar" style="background:#F4D58D">PS</span>
+              <div class="review-person-info">
+                <p class="review-name">Priya S.</p>
+                <p class="review-location">Pune, India</p>
+              </div>
+            </div>
+          </article>
+
+         
+          <article class="review-card review-card--text">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review-text">"Managing my savings through their digital portal has been effortless. The
+              transparency and support I receive from the ABCL team make me feel secure about my financial future."</p>
+            <div class="review-person">
+              <span class="review-avatar" style="background:#A9C6E8">AP</span>
+              <div class="review-person-info">
+                <p class="review-name">Arjun P.</p>
+                <p class="review-location">Chennai, India</p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <button class="slider-arrow slider-arrow--next" type="button" aria-label="Next testimonials">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+
+     
+      <div class="slider-dots" id="sliderDots"></div>
+
+     
+      
+
+    </div>
+  </section> -->
+
+
+
+<section class="testimonials-section">
+    <div class="container">
+  <div class="cta-banner">
+        <div class="cta-content">
+          <h2 class="cta-title">Join 500,000+ others who trust ABCL.</h2>
+          <p class="cta-subtitle">Experience the gold standard in modern finance with secure loans and smart savings.
+          </p>
+          <div class="cta-actions">
+            <button class="btn btn--primary" type="button">Start Your Journey</button>
+            <button class="btn btn--secondary" type="button">Learn More</button>
+          </div>
+        </div>
+        <div class="cta-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M12 2l8 3v6c0 5-3.4 8.9-8 11-4.6-2.1-8-6-8-11V5l8-3z" fill="currentColor" />
+            <path d="M8.5 12.2l2.3 2.3 4.5-4.6" stroke="#B91C1C" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </div>
+      </div>
+      </div>
+</section>
+
+  <!-- ABC of Gold Loan -->
+
+  <section class="insights-section">
+
+    <div class="insights-container">
+
+      <!-- Heading -->
+
+      <div class="insights-header">
+
+        <div class="heading-left">
+
+          <h2>
+  ABC of <span style="color: #BD1B29;">Gold Loan</span>
+</h2>
+
+        </div>
+
+        <a href="https://www.adityabirlacapital.com/abc-of-money/loans/gold-loan-guides" class="knowledge-btn">
+          VIEW MORE
+          <svg width="18" height="18" viewBox="0 0 24 24">
+            <path d="M6 12H18" stroke="currentColor" stroke-width="2" />
+            <path d="M13 7L18 12L13 17" stroke="currentColor" stroke-width="2" />
+          </svg>
+        </a>
+
+      </div>
+
+      <!-- Cards -->
+
+      <div class="insights-grid">
+
+        <!-- Card 1 -->
+<a href="https://www.adityabirlacapital.com/abc-of-money/maximum-ltv-under-gold-loan" class="insight-card-link">
+        <article class="insight-card">
+
+          <div class="card-image">
+
+            <img src="img/first banner (2).jpg" alt="">
+
+          </div>
+
+          <div class="card-content">
+
+            <span class="category">
+              GOLD LOAN
+            </span>
+
+            <h3>
+             LTV in Gold Loan Explained
+            </h3>
+
+            <p>
+              The Reserve Bank of India has fixed the maximum loan-to-value ratio (LTV) of gold loans in the range of 75% to 85%. The maximum loan. 
+            </p>
+
+          </div>
+
+        </article>
+        </a>
+
+        <!-- Card 2 -->
+
+        <a href="https://www.adityabirlacapital.com/abc-of-money/how-does-gold-loan-affect-your-cibil-score" class="insight-card-link">
+
+        <article class="insight-card">
+
+          <div class="card-image">
+
+            <img src="img/ABC_1 1.png" alt="">
+
+          </div>
+
+          <div class="card-content">
+
+            <span class="category">
+              GOLD LOAN
+            </span>
+
+            <h3>
+              How Does a Gold Loan Affect Your CIBIL Score?
+            </h3>
+
+            <p>
+            There are two ways in which a gold loan affects your CIBIL score. Firstly, the lender’s.
+            </p>
+
+          </div>
+
+        </article>
+        </a>
+
+        <!-- Card 3 -->
+
+        <a href="https://www.adityabirlacapital.com/abc-of-money/what-is-the-maximum-tenure-for-gold-loan" class="insight-card-link">
+
+        <article class="insight-card">
+
+          <div class="card-image">
+
+            <img src="img/blog 1.png" alt="">
+
+          </div>
+
+          <div class="card-content">
+
+            <span class="category">
+              GOLD LOAN
+            </span>
+
+            <h3>
+             What Is the Maximum Tenure for a Gold Loan?
+            </h3>
+
+            <p>
+             Gold loan tenure is the time period decided for repayment between the borrower and the lender. 
+            </p>
+
+          </div>
+
+        </article>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+
+
+
+  <!-- FOOTER -->
+  <footer class="custom-footer">
+    <img src="img/Foote.png" alt="Footer" class="footer-image">
+  </footer>
+
+
+
+
+  <!-- Swiper JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
