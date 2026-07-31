@@ -587,11 +587,11 @@ btn.addEventListener("click", () => {
 
     // purities shown as buttons on the Weight tab (ornament karats + gold coin)
     weightPurities: [
-      { value: "18K", label: "18 Carat", type: "ornament" },
-      { value: "19K", label: "19 Carat", type: "ornament" },
-      { value: "20K", label: "20 Carat", type: "ornament" },
-      { value: "21K", label: "21 Carat", type: "ornament" },
-      { value: "22K", label: "22 Carat", type: "ornament" },
+      { value: "18K", label: "18 Karat", type: "ornament" },
+      { value: "19K", label: "19 Karat", type: "ornament" },
+      { value: "20K", label: "20 Karat", type: "ornament" },
+      { value: "21K", label: "21 Karat", type: "ornament" },
+      { value: "22K", label: "22 Karat", type: "ornament" },
       { value: "24K", label: "Gold Coin 24K", type: "coin" }
     ],
 
