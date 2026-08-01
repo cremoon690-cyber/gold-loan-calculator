@@ -4396,9 +4396,9 @@ select#interestPurity {
 .select-field {
   appearance: none;
   -webkit-appearance: none;
-  -moz-appearance: none;
+  -moz-appearance: none;}
 
-  /* apna custom arrow icon */
+/* drop icon left space */
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='3'><polyline points='6 9 12 15 18 9'></polyline></svg>");
   background-repeat: no-repeat;
   background-position: right 16px center; 
