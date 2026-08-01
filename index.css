@@ -5622,7 +5622,18 @@ select#goldTypeSelect {
     max-width: 1500px;
     margin: 0 auto;
     padding: 40px 24px 56px;
-}}
+}
+
+.stats-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;   /* boxes center me rahenge */
+  align-items: flex-start;
+  gap: 290px;                 /* <-- yahan px value change karke spacing control karein */
+  flex-wrap: nowrap;
+}
+}
 
 
 /* extra css */
