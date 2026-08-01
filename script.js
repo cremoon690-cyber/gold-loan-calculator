@@ -1474,7 +1474,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const originalCards = document.querySelectorAll(".rate-cards .rate-card");
 
     if (!track || !originalCards.length) {
-        console.warn("Rate slider: required elements not found. Check class names.");
+      
         return;
     }
 
