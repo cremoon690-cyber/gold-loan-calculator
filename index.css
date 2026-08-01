@@ -4401,11 +4401,11 @@ select#interestPurity {
   /* apna custom arrow icon */
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='3'><polyline points='6 9 12 15 18 9'></polyline></svg>");
   background-repeat: no-repeat;
-  background-position: right 16px center; /* yahan se right margin/gap control hota hai */
+  background-position: right 16px center; 
   background-size: 14px;
 
-  padding: 20px 40px 20px 16px; /* right side me extra padding taaki text arrow se na takraye */
-  border-radius: 8px; /* aapke screenshot jaisa rounded look */
+  padding: 20px 40px 20px 16px; 
+  border-radius: 8px;
   border: 1px solid #ddd;
   width: 100%;
 }
