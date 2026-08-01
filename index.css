@@ -5625,12 +5625,12 @@ select#goldTypeSelect {
 }
 
 .stats-container {
-  max-width: 1500px;
+  max-width: 1500px!important;
   margin: 0 auto;
   display: flex;
   justify-content: center;   /* boxes center me rahenge */
   align-items: flex-start;
-  gap: 290px;                 /* <-- yahan px value change karke spacing control karein */
+  gap: 290px!important;                 /* <-- yahan px value change karke spacing control karein */
   flex-wrap: nowrap;
 }
 }
