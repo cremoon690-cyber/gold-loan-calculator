@@ -1823,25 +1823,25 @@ if (document.readyState === 'loading') {
 
 
  /* <!-- Charges and Documents --> */
-const DOC_LINKS = {
-  mitc: {
-    label: "MITC",
-    en: "https://example.com/docs/mitc-english.pdf",
-    hi: "https://example.com/docs/mitc-hindi.pdf",
-    mr: "https://example.com/docs/mitc-marathi.pdf"
-  },
-  soc: {
-    label: "Schedule of Charges",
-    en: "https://example.com/docs/schedule-of-charges-english.pdf",
-    hi: "https://example.com/docs/schedule-of-charges-hindi.pdf",
-    mr: "https://example.com/docs/schedule-of-charges-marathi.pdf"
-  },
-  gvm: {
-    label: "Gold Valuation Methodology",
-    en: "https://example.com/docs/gold-valuation-methodology-english.pdf",
-    hi: "https://example.com/docs/gold-valuation-methodology-hindi.pdf",
-    mr: "https://example.com/docs/gold-valuation-methodology-marathi.pdf"
-  }
+const DOC_LINKS = { 
+  mitc: { 
+    label: "MITC", 
+    en: "https://www.adityabirlacapital.com/-/media/Feature/ABCL/ABFL/GoldLoan/MITC-ABHFL.ashx", 
+    // hi: "https://example.com/docs/mitc-hindi.pdf", 
+    // mr: "https://example.com/docs/mitc-marathi.pdf" 
+  }, 
+  soc: { 
+    label: "Schedule of Charges", 
+    en: "https://www.adityabirlacapital.com/-/media/Feature/ABCL/ABFL/GoldLoan/Schedule-of-Charges-300726.ashx", 
+    // hi: "https://example.com/docs/schedule-of-charges-hindi.pdf", 
+    // mr: "https://example.com/docs/schedule-of-charges-marathi.pdf" 
+  }, 
+  gvm: { 
+    label: "Gold Valuation Methodology", 
+    en: "https://www.adityabirlacapital.com/-/media/Feature/ABCL/ABFL/GoldLoan/Gold-Valuation-Methodology-300726.ashx", 
+    // hi: "https://example.com/docs/gold-valuation-methodology-hindi.pdf", 
+    // mr: "https://example.com/docs/gold-valuation-methodology-marathi.pdf" 
+  } 
 };
 
 document.addEventListener("DOMContentLoaded", () => {
